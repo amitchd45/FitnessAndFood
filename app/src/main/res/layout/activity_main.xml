@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.MainActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Week Goal"
+                android:textSize="@dimen/text16"
+                android:padding="10dp"/>
+
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:textColorSelected="#FFFF"
+                app:sizeBottomText="14sp"
+                app:sizeMiddleText="20sp"/>
+
+
+            <View
+                android:layout_marginTop="@dimen/space15"
+                android:layout_marginBottom="@dimen/space15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space5"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text16"
+                android:padding="@dimen/space10"/>
+
+            <RelativeLayout
+                android:padding="@dimen/space10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space150"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius_bottom_left="@dimen/space10"
+                    app:riv_corner_radius_bottom_right="@dimen/space10"
+                    app:riv_corner_radius_top_left="@dimen/space10"
+                    app:riv_corner_radius_top_right="@dimen/space10"/>
+
+                <ImageView
+                    android:layout_alignRight="@id/imageView"
+                    android:layout_alignTop="@id/imageView"
+                    android:padding="@dimen/space8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_black_24dp"/>
+                <LinearLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:padding="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text14"
+                        android:text="Thigh Advanced"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"/>
+
+                    <LinearLayout
+                        android:padding="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="@dimen/space10"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="21 minuets"
+                            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                            android:drawableTint="@android:color/white"
+                            android:drawablePadding="@dimen/space5"
+                            android:textSize="@dimen/text14"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/space5"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="29 workouts"
+                            android:drawableLeft="@drawable/ic_flash_on_black_24dp"
+                            android:drawableTint="@android:color/white"
+                            android:drawablePadding="@dimen/space5"
+                            android:textSize="@dimen/text14"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:padding="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_flash_on_black_24dp"
+                            android:tint="@android:color/white"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_flash_on_black_24dp"
+                            android:tint="@android:color/white"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_flash_on_black_24dp"
+                            android:tint="@android:color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My workouts"
+                android:drawableLeft="@drawable/ic_favorite_black_24dp"
+                android:drawablePadding="@dimen/space5"
+                android:textAllCaps="true"
+                android:textSize="@dimen/text16"
+                android:padding="@dimen/space10"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_my_workouts"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

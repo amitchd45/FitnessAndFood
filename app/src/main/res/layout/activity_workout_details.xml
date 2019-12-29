@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.WorkoutDetailsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space200"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squats*20"
+                android:textSize="@dimen/text16"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/space10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gymnastics is a sport which involves doing exercises which need strength, flexibility, balance and control. This may include running, jumping, tumbling, somersaulting, flipping and balancing. In women's gymnastics, there are four activities: floor, uneven bars, balance beam, and vault"
+                android:textSize="@dimen/text16"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/space10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gymnastics is a sport which involves doing exercises which need strength, flexibility, balance and control. This may include running, jumping, tumbling, somersaulting, flipping and balancing. In women's gymnastics, there are four activities: floor, uneven bars, balance beam, and vault"
+                android:textSize="@dimen/text16"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/space10"/>
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="@android:color/black"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
